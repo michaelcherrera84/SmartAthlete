@@ -1,0 +1,14 @@
+[
+  {
+    "athleteId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "injuryId": 1,
+    "date": "2024-06-01",
+    "description": "Twisted ankle during a game."
+  },
+  {
+    "athleteId": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "injuryId": 2,
+    "date": "2024-07-12",
+    "description": "Minor knee strain from training."
+  }
+]
