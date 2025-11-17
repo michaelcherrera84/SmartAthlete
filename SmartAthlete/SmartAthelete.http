@@ -1,0 +1,6 @@
+@SmartAthelete_HostAddress = http://localhost:5288
+
+GET {{SmartAthelete_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

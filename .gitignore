@@ -1,0 +1,63 @@
+# ============================
+# .NET / ASP.NET Core
+# ============================
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.csproj.user
+
+# Auto-generated publish output
+publish/
+out/
+
+# ASP.NET Core runtime logs
+logs/
+
+# ============================
+# SQLite
+# ============================
+*.db-shm
+*.db-wal
+
+# Keep the main DB, ignore the temp files
+app.db-shm
+app.db-wal
+
+# If you want to ignore the DB entirely, uncomment:
+# app.db
+
+# ============================
+# Rider / JetBrains IDE
+# ============================
+.idea/
+*.iml
+*.dotCover
+
+# .NET solution-wide Rider cache
+/.fleet/
+
+# ============================
+# Node / PrimeReact Frontend
+# ============================
+node_modules/
+dist/
+build/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ============================
+# Environment / Secrets
+# ============================
+.env
+*.env.local
+*.env.development
+*.env.production
+
+# Local tool files
+.vscode/
+.DS_Store
