@@ -1,0 +1,29 @@
+/* PrimeFlex utilities */
+@import "primeflex/primeflex.css";
+
+/* PrimeReact theme */
+@import "primereact/resources/themes/lara-light-blue/theme.css";
+
+/* PrimeReact core (needed for correct spacing & resets) */
+@import "primereact/resources/primereact.min.css";
+
+/* Optional icons */
+@import "primeicons/primeicons.css";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+}
+
+/* Custom utilities */
+.w-36rem { width: 36rem; }
+.w-38rem { width: 38rem; }
+.w-40rem { width: 40rem; }
+
+.px-9 { padding-left: 6rem; padding-right: 6rem; }
+.px-10 { padding-left: 7rem; padding-right: 7rem; }
+.px-11 { padding-left: 8rem; padding-right: 8rem; }
+.px-12 { padding-left: 9rem; padding-right: 9rem; }

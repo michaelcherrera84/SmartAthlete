@@ -24,6 +24,9 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
     /// <summary>Represents all sports in the system.</summary>
     public DbSet<Sport> Sports => Set<Sport>();
     
+    /// <summary>Represents all users in the system.</summary>
+    public DbSet<User> Users => Set<User>();
+    
     /// <summary>
     /// Configures entity relationships and composite keys.
     /// </summary>
