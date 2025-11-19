@@ -23,4 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-smart-athlete/cert/
+
+/cert/cert.pem
+/cert/key.pem
