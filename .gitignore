@@ -61,3 +61,5 @@ pnpm-debug.log*
 # Local tool files
 .vscode/
 .DS_Store
+
+smart-athlete/cert/
