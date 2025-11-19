@@ -7,6 +7,7 @@ function Home() {
     const queryClient = useQueryClient();
     const navigate = useNavigate();
 
+    // Custom hook to handle logout.
     const logoutMutation = useMutation({
         mutationFn: logout,
         onSuccess: () => {
