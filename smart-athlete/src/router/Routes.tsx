@@ -4,6 +4,9 @@ import Home from "../pages/Home.tsx";
 import Login from "../pages/Login.tsx";
 import RequireAuth from "./RequireAuth.tsx";
 
+/**
+ * Browser router for the application.
+ */
 export const router = createBrowserRouter([
     {
         path: '/',
