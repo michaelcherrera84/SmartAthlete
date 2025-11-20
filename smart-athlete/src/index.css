@@ -1,14 +1,11 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* PrimeFlex utilities */
+@import 'primeflex/primeflex.css';
 
-  color-scheme: light dark;
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+/* PrimeReact theme */
+@import "primereact/resources/themes/lara-light-blue/theme.css";
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* PrimeReact core (needed for correct spacing & resets) */
+@import "primereact/resources/primereact.min.css";
+
+/* Optional icons */
+@import "primeicons/primeicons.css";

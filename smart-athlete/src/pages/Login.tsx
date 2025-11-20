@@ -96,7 +96,6 @@ function Login() {
                     </Card>
                 </motion.div>
             </form>
-
             {/* Credits */}
             <div className="fixed bottom-0 left-0 pl-3 pr-2 pb-1 bg-black-alpha-50 border-round-right-lg">
                 <a href="https://www.vecteezy.com/free-photos/sports-background"
