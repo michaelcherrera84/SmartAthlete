@@ -21,7 +21,7 @@ function Sports() {
                 <DashboardHeader title="Sports" />
                 <div id="main" className="flex justify-content-center px-8 py-5">
                     <Card className="w-6 h-fit">
-                        <DataTable value={ sports } size="large" className="w-full">
+                        <DataTable value={ sports } size="large" className="w-full" rowHover>
                             <Column field="id" header="ID" />
                             <Column field="name" header="Name" />
                         </DataTable>

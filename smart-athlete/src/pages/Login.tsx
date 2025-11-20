@@ -2,7 +2,6 @@ import { usePageTitle } from '../hooks/Title.tsx';
 import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
 import { InputText } from 'primereact/inputtext';
-import { motion, type Variants } from 'motion/react';
 import { useMutation /*useQueryClient*/ } from '@tanstack/react-query';
 import { useLocation, useNavigate } from 'react-router';
 import { login } from '../queries/userQueries.ts';
@@ -60,43 +59,26 @@ function Login() {
         });
     };
 
-    /**
-     * Variants for the slide-in animation.
-     */
-    const slideInVariants: Variants = {
-        hidden: { y: -300, opacity: 0 }, // Start position (300px up, hidden)
-        visible: {
-            y: 0, // End position (original position)
-            opacity: 1,
-            transition: {
-                duration: 0.75, // Animation duration
-                ease: 'easeOut',
-            },
-        },
-    };
-
     return (
         <div id="wrapper"
              className="w-full h-screen flex flex-column justify-content-center align-items-center"
              style={ backgroundStyle }
         >
-            {/* Login form */}
+            {/* Login form */ }
             <form onSubmit={ handleSubmit }>
-                <motion.div variants={ slideInVariants } initial="hidden" animate="visible">
-                    <Card title="Welcome"
-                          subTitle="Please log in to continue"
-                          footer={ <Button type="submit" label="Log In" className="w-full" rounded /> }
-                          className="w-36rem px-11 py-5 text-center"
-                    >
-                        <div className="flex flex-column gap-3">
-                            <InputText type="text" placeholder="Username" name="username" />
-                            <InputText type="password" placeholder="Password" name="password" />
-                            { error && <Message severity="error" text={ error } /> }
-                        </div>
-                    </Card>
-                </motion.div>
+                <Card title="Welcome"
+                      subTitle="Please log in to continue"
+                      footer={ <Button type="submit" label="Log In" className="w-full" rounded /> }
+                      className="w-36rem px-11 py-5 text-center fadeinup animation-duration-500"
+                >
+                    <div className="flex flex-column gap-3">
+                        <InputText type="text" placeholder="Username" name="username" />
+                        <InputText type="password" placeholder="Password" name="password" />
+                        { error && <Message severity="error" text={ error } /> }
+                    </div>
+                </Card>
             </form>
-            {/* Credits */}
+            {/* Credits */ }
             <div className="fixed bottom-0 left-0 pl-3 pr-2 pb-1 bg-black-alpha-50 border-round-right-lg">
                 <a href="https://www.vecteezy.com/free-photos/sports-background"
                    target="_blank"

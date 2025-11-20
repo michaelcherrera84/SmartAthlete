@@ -21,7 +21,7 @@ function Injuries() {
                 <DashboardHeader title="Injuries" />
                 <div id="main" className="flex justify-content-center px-8 py-5">
                     <Card className="w-6 h-fit">
-                        <DataTable value={ injuries } size="large" className="w-full">
+                        <DataTable value={ injuries } size="large" className="w-full" rowHover>
                             <Column field="id" header="ID" />
                             <Column field="type" header="Type" />
                         </DataTable>
