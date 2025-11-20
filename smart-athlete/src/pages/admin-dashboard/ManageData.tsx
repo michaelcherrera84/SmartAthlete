@@ -13,15 +13,15 @@ function ManageData() {
             <div className="flex flex-column h-full w-full overflow-y-auto overflow-x-hidden">
                 <DashboardHeader />
                 <div id="main" className="flex flex-grow-1 flex-wrap gap-5 px-8 py-5">
-                    <Card title="Athletes" className="w-20rem h-22rem">
+                    <Card title="Athletes" className="w-20rem h-22rem hover:shadow-5">
                         <Link to="/dashboard/manage-data/athletes" className="text-lg">View</Link>
                     </Card>
-                    <Card title="Athlete Injuries" className="w-20rem h-22rem"></Card>
-                    <Card title="Coaches" className="w-20rem h-22rem"></Card>
-                    <Card title="Sports" className="w-20rem h-22rem">
+                    <Card title="Athlete Injuries" className="w-20rem h-22rem hover:shadow-5"></Card>
+                    <Card title="Coaches" className="w-20rem h-22rem hover:shadow-5"></Card>
+                    <Card title="Sports" className="w-20rem h-22rem hover:shadow-5">
                         <Link to="/dashboard/manage-data/sports" className="text-lg">View</Link>
                     </Card>
-                    <Card title="Injuries" className="w-20rem h-22rem">
+                    <Card title="Injuries" className="w-20rem h-22rem hover:shadow-5">
                         <Link to="/dashboard/manage-data/injuries" className="text-lg">View</Link>
                     </Card>
                 </div>

@@ -28,3 +28,9 @@ body {
 .w-36rem { width: 36rem; }
 .w-38rem { width: 38rem; }
 .w-40rem { width: 40rem; }
+
+/* Animation */
+.move-on-hover:hover {
+    transform: translate(-1px, -1px);
+    transition: transform 0.1s ease-in-out;
+}
