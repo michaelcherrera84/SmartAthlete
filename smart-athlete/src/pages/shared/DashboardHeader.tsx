@@ -1,5 +1,4 @@
 import { useCurrentUser } from '../../hooks/CurrentUser.ts';
-import { Divider } from 'primereact/divider';
 import { Button } from 'primereact/button';
 import { useLocation, useNavigate } from 'react-router';
 
@@ -27,7 +26,7 @@ function DashboardHeader({ title }: Props) {
                 <h1 className="m-0">{ title }</h1>
                 <p className="m-0 w-9rem text-right">{ user?.role ?? '' }</p>
             </div>
-            <Divider className="mx-4 my-3" />
+            <div className="mx-5 my-2 border-1 border-gray-300"></div>
         </>
     );
 }

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
+
+body {
+    margin: 0;
+}
+
+/*-------------------------------------------------*/
+/*                    Utilities                    */
+/*-------------------------------------------------*/
+
+/* Background */
+.link-gradient { background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 80%, rgba(0, 0, 0, 0));}
+
+/* Text */
+.edu-nsw-act-hand-pre-400 {
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.edu-nsw-act-hand-pre-500 {
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.edu-nsw-act-hand-pre-600 {
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.edu-nsw-act-hand-pre-700 {
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Spacing */
+.p-9 { padding: 6rem; }
+
+.px-9 { padding-left: 6rem; padding-right: 6rem; }
+
+.py-9 { padding-top: 6rem; padding-bottom: 6rem; }
+
+.p-10 { padding: 7rem; }
+
+.px-10 { padding-left: 7rem; padding-right: 7rem; }
+
+.py-10 { padding-top: 7rem; padding-bottom: 7rem; }
+
+.pt-10 { padding-top: 7rem; }
+
+.p-11 { padding: 8rem; }
+
+.px-11 { padding-left: 8rem; padding-right: 8rem; }
+
+.py-11 { padding-top: 8rem; padding-bottom: 8rem; }
+
+.pt-11 { padding-top: 8rem; }
+
+.p-12 { padding: 9rem; }
+
+.px-12 { padding-left: 9rem; padding-right: 9rem; }
+
+.py-12 { padding-top: 9rem; padding-bottom: 9rem; }
+
+/* Sizing */
+.w-400 { width: 400px; }
+.h-400 { height: 400px; }
+
+.w-600 { width: 600px; }
+.h-600 { height: 600px; }
+
+.w-32rem { width: 32rem; }
+
+.w-34rem { width: 34rem; }
+
+.w-36rem { width: 36rem; }
+
+.w-38rem { width: 38rem; }
+
+.w-40rem { width: 40rem; }
+
+/* Animation */
+.move-on-hover:hover {
+    transform: translate(-1px, -1px);
+    transition: transform 0.1s ease-in-out;
+}

@@ -42,19 +42,19 @@ function Sidebar() {
                 <div className="flex flex-column flex-grow-1 pt-11 gap-5">
                     <Button icon="pi pi-home"
                             raised rounded
-                            className="bg-blue-700 border-3 border-double border-white hover:bg-blue-500 move-on-hover hover:shadow-4"
+                            className="bg-blue-700 border-3 border-double border-white hover:bg-blue-600 move-on-hover hover:shadow-4"
                             onClick={ () => navigate('/') }
                     />
                     { user?.role === 'Admin' &&
                         <Button icon="pi pi-database"
                                 raised rounded
-                                className="bg-blue-700 border-3 border-double border-white hover:bg-blue-500 move-on-hover hover:shadow-4"
+                                className="bg-blue-700 border-3 border-double border-white hover:bg-blue-600 move-on-hover hover:shadow-4"
                                 onClick={ () => navigate('/dashboard/manage-data') }
                         />
                     }
                     <Button icon="pi pi-envelope"
                             raised rounded
-                            className="bg-blue-700 border-3 border-double border-white hover:bg-blue-500 move-on-hover hover:shadow-4"
+                            className="bg-blue-700 border-3 border-double border-white hover:bg-blue-600 move-on-hover hover:shadow-4"
                     />
                 </div>
 

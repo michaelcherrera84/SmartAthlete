@@ -68,8 +68,15 @@ function Login() {
             <form onSubmit={ handleSubmit }>
                 <Card title="Welcome"
                       subTitle="Please log in to continue"
-                      footer={ <Button type="submit" label="Log In" className="w-full" rounded /> }
-                      className="w-36rem px-11 py-5 text-center fadeinup animation-duration-500"
+                      footer={
+                          <Button type="submit"
+                                  label="Log In"
+                                  className="w-full hover:bg-blue-600 move-on-hover"
+                                  rounded
+                                  raised
+                          />
+                      }
+                      className="w-36rem px-11 py-5 text-center fadeinup animation-duration-500 border-round-3xl bg-white-alpha-90"
                 >
                     <div className="flex flex-column gap-3">
                         <InputText type="text" placeholder="Username" name="username" />
@@ -79,7 +86,7 @@ function Login() {
                 </Card>
             </form>
             {/* Credits */ }
-            <div className="fixed bottom-0 left-0 pl-3 pr-2 pb-1 bg-black-alpha-50 border-round-right-lg">
+            <div className="fixed bottom-0 left-0 pl-3 pr-5 pb-1 link-gradient">
                 <a href="https://www.vecteezy.com/free-photos/sports-background"
                    target="_blank"
                    rel="noopener noreferrer"

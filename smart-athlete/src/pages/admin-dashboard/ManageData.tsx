@@ -16,8 +16,12 @@ function ManageData() {
                     <Card title="Athletes" className="w-20rem h-22rem hover:shadow-5">
                         <Link to="/dashboard/manage-data/athletes" className="text-lg">View</Link>
                     </Card>
-                    <Card title="Athlete Injuries" className="w-20rem h-22rem hover:shadow-5"></Card>
-                    <Card title="Coaches" className="w-20rem h-22rem hover:shadow-5"></Card>
+                    <Card title="Athlete Injuries" className="w-20rem h-22rem hover:shadow-5">
+                        <Link to="/dashboard/manage-data/athlete-injuries" className="text-lg">View</Link>
+                    </Card>
+                    <Card title="Coaches" className="w-20rem h-22rem hover:shadow-5">
+                        <Link to="/dashboard/manage-data/coaches" className="text-lg">View</Link>
+                    </Card>
                     <Card title="Sports" className="w-20rem h-22rem hover:shadow-5">
                         <Link to="/dashboard/manage-data/sports" className="text-lg">View</Link>
                     </Card>
