@@ -21,3 +21,9 @@ fast, modern, component-driven UI.
 
 *This project is not yet complete. The idea for this project comes curtesy of the [South Louisiana Community College 
 Application Software Development Program.](https://www.solacc.edu/academics/programs-offered/application-software-development/index)*
+
+
+### Screenshots
+![Screenshot](smart-athlete/src/assets/smart-athlete1.png)
+![Screenshot](smart-athlete/src/assets/smart-athlete2.png)
+![Screenshot](smart-athlete/src/assets/smart-athlete3.png)
