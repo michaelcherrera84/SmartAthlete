@@ -1,12 +1,17 @@
 import { usePageTitle } from '../hooks/Title.tsx';
 import Sidebar from './shared/Sidebar.tsx';
-import { Divider } from 'primereact/divider';
 import { useCurrentUser } from '../hooks/CurrentUser.ts';
+import TriCarousel from './shared/TriCarousel.tsx';
 
 function Home() {
     usePageTitle('Dashboard');
 
-    const {data: user} = useCurrentUser();
+    const { data: user } = useCurrentUser();
+    const images = [
+        { src: 'images/injuries/injury001.png', alt: 'Injury1' },
+        { src: 'images/injuries/injury002.png', alt: 'Injury1' },
+        { src: 'images/injuries/injury003.png', alt: 'Injury1' },
+    ];
 
     return (
         <div id="wrapper" className="flex h-screen w-screen bg-gray-50 overflow-hidden">
@@ -16,9 +21,14 @@ function Home() {
                     <h1 className="m-0">Hello{ user ? ', ' + user.firstName : '!' }</h1>
                     <p className="m-0">{ user?.role ?? '' }</p>
                 </div>
-                <Divider className="mx-4 my-3" />
-                <div id="main" className="flex flex-grow-1 flex-wrap gap-5 p-8 justify-content-center">
-                    <h1>Welcome to Smart Athlete</h1>
+                <div className="mx-5 my-2 border-1 border-gray-300"></div>
+                <div id="main" className="flex flex-column flex-grow-1 p-8 align-items-center text-gray-600">
+                    <h1 className="m-0 edu-nsw-act-hand-pre-700">Welcome to Smart Athlete</h1>
+                    <h3 className="edu-nsw-act-hand-pre-400 m-0">Helping coaches, trainers, and sports programs manage
+                        athletes and their injuries.</h3>
+                    <div className="mt-7">
+                        <TriCarousel images={ images } intervalMs={ 10000 } />
+                    </div>
                 </div>
             </div>
         </div>

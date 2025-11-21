@@ -1,35 +1,35 @@
 import { usePageTitle } from '../../../hooks/Title.tsx';
-import { useAthlete } from '../../../hooks/Athlete.ts';
 import Sidebar from '../../shared/Sidebar.tsx';
 import DashboardHeader from '../../shared/DashboardHeader.tsx';
 import { Card } from 'primereact/card';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
+import { useCoach } from '../../../hooks/Coach.ts';
 import { useState } from 'react';
 import { Dialog } from 'primereact/dialog';
-import AthleteDetails from './AthleteDetails.tsx';
+import CoachDetails from './CoachDetails.tsx';
 
-function Athletes() {
-    usePageTitle('Athletes');
+function Coaches() {
+    usePageTitle('Coaches');
 
-    const { athletes, loadingAthletes, athletesError } = useAthlete();
-    const [selectedAthlete, setSelectedAthlete] = useState<string | null>(null);
+    const { coaches, loadingCoaches, coachesError } = useCoach();
+    const [selectedCoach, setSelectedCoach] = useState<string | null>(null);
 
-    if (loadingAthletes) return <p>Loading...</p>;
-    if (athletesError) return <p>Error loading athlete.</p>;
+    if (loadingCoaches) return <p>Loading...</p>;
+    if (coachesError) return <p>Error loading athlete.</p>;
 
     return (
         <div id="wrapper" className="flex h-screen w-screen bg-gray-50 overflow-hidden">
             <Sidebar />
             <div className="flex flex-column h-full w-full overflow-y-auto overflow-x-hidden">
-                <DashboardHeader title="Athletes" />
+                <DashboardHeader title="Coaches" />
                 <div id="main" className="flex justify-content-center px-8 py-5">
                     <Card className="w-10 h-fit">
-                        <DataTable value={ athletes }
+                        <DataTable value={ coaches }
                                    size="large"
                                    className="w-full"
                                    rowHover
-                                   onRowClick={ (e) => setSelectedAthlete(e.data.id) }
+                                   onRowClick={ (e) => setSelectedCoach(e.data.id) }
                         >
                             <Column field="firstName" header="First Name" />
                             <Column field="middleName" header="Middle Name" />
@@ -37,13 +37,13 @@ function Athletes() {
                             <Column field="dateOfBirth" header="Date of Birth" dataType="date" />
                             <Column field="email" header="Email" />
                         </DataTable>
-                        <Dialog header={ athletes?.find(athlete => athlete.id === selectedAthlete)?.firstName + ' '
-                            + athletes?.find(athlete => athlete.id === selectedAthlete)?.middleName + ' '
-                            + athletes?.find(athlete => athlete.id === selectedAthlete)?.lastName }
-                                visible={ !!selectedAthlete }
-                                onHide={ () => setSelectedAthlete(null) }
+                        <Dialog header={ coaches?.find(coach => coach.id === selectedCoach)?.firstName + ' '
+                            + coaches?.find(coach => coach.id === selectedCoach)?.middleName + ' '
+                            + coaches?.find(coach => coach.id === selectedCoach)?.lastName }
+                                visible={ !!selectedCoach }
+                                onHide={ () => setSelectedCoach(null) }
                         >
-                            <AthleteDetails id={ selectedAthlete! } />
+                            <CoachDetails id={ selectedCoach! } />
                         </Dialog>
                     </Card>
                 </div>
@@ -52,4 +52,4 @@ function Athletes() {
     );
 }
 
-export default Athletes;
+export default Coaches;

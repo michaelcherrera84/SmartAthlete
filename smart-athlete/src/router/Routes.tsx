@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router';
-import App from '../App.tsx';
+import App from '../pages/App.tsx';
 import Home from '../pages/Home.tsx';
 import Login from '../pages/Login.tsx';
 import RequireAuth from './RequireAuth.tsx';
@@ -8,6 +8,8 @@ import ManageData from '../pages/admin-dashboard/ManageData.tsx';
 import Athletes from '../pages/admin-dashboard/athlete/Athletes.tsx';
 import Sports from '../pages/admin-dashboard/sport/Sports.tsx';
 import Injuries from '../pages/admin-dashboard/injury/Injuries.tsx';
+import Coaches from '../pages/admin-dashboard/coach/Coaches.tsx';
+import AthleteInjuries from '../pages/admin-dashboard/athlete-injury/AthleteInjuries.tsx';
 
 /**
  * Browser router for the application.
@@ -29,6 +31,12 @@ export const router = createBrowserRouter([
 
                             // Athlete Management
                             { path: '/dashboard/manage-data/athletes', element: <Athletes /> },
+
+                            // Athlete Injury Management
+                            { path: '/dashboard/manage-data/athlete-injuries', element: <AthleteInjuries /> },
+
+                            // Coach Management
+                            { path: '/dashboard/manage-data/coaches', element: <Coaches /> },
 
                             // Sport Management
                             { path: '/dashboard/manage-data/sports', element: <Sports /> },
